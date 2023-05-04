@@ -9,7 +9,7 @@ class Repo {
   static Future start() async {
     // Log into database
     final db = await Db.create(
-        'mongodb+srv://hari:hari@cluster0.ima4puy.mongodb.net/student?retryWrites=true&w=majority');
+        "");
     await db.open(); // Initiate the connection
     coll =
         db.collection('details'); // Define a handle to the contacts collection
